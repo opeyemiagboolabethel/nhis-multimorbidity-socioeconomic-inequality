@@ -1,0 +1,53 @@
+Multiple imputation results:
+      fits_income <- with(
+  mi_design,
+  survey::svyglm(
+    multimorbidity ~ education4 + poverty4 + age_group + sex + race_ethnicity + marital4 + region,
+    family = quasibinomial()
+  )
+)
+      MIcombine.default(fits_income)
+                                           results         se      (lower
+(Intercept)                            -1.71541917 0.06916975 -1.85098949
+education4Some college / associate      0.17182074 0.04142926  0.09062079
+education4High school graduate          0.06453032 0.04496787 -0.02360521
+education4Less than high school         0.26987794 0.05893644  0.15436447
+poverty4200-399% FPL                    0.28770651 0.04233618  0.20458126
+poverty4100-199% FPL                    0.48575799 0.04908891  0.38952840
+poverty4<100% FPL                       0.73412740 0.06072962  0.61498250
+age_group35-49                          0.33630519 0.05222911  0.23393801
+age_group50-64                          1.02022417 0.05296575  0.91641318
+age_group65+                            1.88076919 0.05441034  1.77412688
+sexFemale                               0.29369327 0.03185883  0.23125111
+race_ethnicityNon-Hispanic Black       -0.34811456 0.05940023 -0.46453687
+race_ethnicityHispanic                 -0.83050689 0.05225844 -0.93293156
+race_ethnicityNon-Hispanic Asian       -0.83961406 0.07651074 -0.98957235
+race_ethnicityOther / multiple          0.10505613 0.08888354 -0.06915242
+marital4Living with partner             0.28693210 0.05971464  0.16989355
+marital4Never married                   0.05629436 0.04732189 -0.03645490
+marital4Widowed / divorced / separated  0.32092304 0.03858807  0.24529177
+regionMidwest                           0.04250984 0.05382441 -0.06298408
+regionSouth                             0.07817961 0.05191294 -0.02356790
+regionWest                              0.03591811 0.05565980 -0.07317309
+                                           upper) missInfo
+(Intercept)                            -1.5798488      0 %
+education4Some college / associate      0.2530207      0 %
+education4High school graduate          0.1526658      0 %
+education4Less than high school         0.3853914      0 %
+poverty4200-399% FPL                    0.3708318     12 %
+poverty4100-199% FPL                    0.5819876      4 %
+poverty4<100% FPL                       0.8532723      9 %
+age_group35-49                          0.4386724      0 %
+age_group50-64                          1.1240351      0 %
+age_group65+                            1.9874115      0 %
+sexFemale                               0.3561354      0 %
+race_ethnicityNon-Hispanic Black       -0.2316922      0 %
+race_ethnicityHispanic                 -0.7280822      0 %
+race_ethnicityNon-Hispanic Asian       -0.6896558      0 %
+race_ethnicityOther / multiple          0.2792647      0 %
+marital4Living with partner             0.4039707      0 %
+marital4Never married                   0.1490436      0 %
+marital4Widowed / divorced / separated  0.3965543      0 %
+regionMidwest                           0.1480038      0 %
+regionSouth                             0.1799271      0 %
+regionWest                              0.1450093      0 %

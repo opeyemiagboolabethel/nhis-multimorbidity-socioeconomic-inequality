@@ -1,0 +1,7 @@
+check,value,expected,status
+Adult raw records,32629,32629,PASS
+Adult income raw records,326290,326290,PASS
+Unique adult HHX,32629,32629,PASS
+Income imputations per adult: minimum,10,10,PASS
+Income imputations per adult: maximum,10,10,PASS
+Negative survey weights,0,0,PASS

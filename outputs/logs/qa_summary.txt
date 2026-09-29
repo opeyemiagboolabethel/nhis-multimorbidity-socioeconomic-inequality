@@ -1,0 +1,3 @@
+Weighted adult population represented: 259,653,935
+Complete multimorbidity outcome records: 32294 / 32629
+QA completed: 2026-09-29 21:39:27.127361

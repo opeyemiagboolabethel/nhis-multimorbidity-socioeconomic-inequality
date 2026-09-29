@@ -1,0 +1,5 @@
+Wald test for education4:age_group
+ in svyglm(formula = multimorbidity ~ education4 * age_group + sex + 
+    race_ethnicity + marital4 + region, design = complete_model, 
+    family = quasibinomial())
+F =  5.057988  on  9  and  584  df: p= 0.0000013554 
